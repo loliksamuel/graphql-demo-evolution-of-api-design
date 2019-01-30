@@ -2,16 +2,17 @@
 
 #### From the talk _From RPC to GraphQL: APIs design from past to present_
 
-## Getting Started
+## how to run
 
 ```bash
 npm install
 npm start
 ```
 
-##https://graphql.org/learn/queries/
+## https://graphql.org/learn/queries/
 
 ---
+## queries
 ```bash
 {
   posts {
@@ -22,6 +23,7 @@ npm start
 ```bash
 query posts1 {
       posts {
+      # queries can have comments
         id
       }  
 }
@@ -51,6 +53,17 @@ query autors1 {
   }
 }
 ```
+```bash
+mutation postId {
+  posts {
+    id
+    tags
+    summary
+   
+  }
+}
+```
+
 ## License
 
 MIT
